@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Aayush Vikram Nawale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader-circle"></div>
+        <div class="loader-line-mask">
+            <div class="loader-line"></div>
+        </div>
+        <span class="loader-text">Loading Projects...</span>
+    </div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">AVN</a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects-hero">
+            <div class="container">
+                <h1 class="page-title" data-animate="slide-up">My Projects</h1>
+                <p class="page-subtitle" data-animate="slide-up" data-animate-delay="0.2s">Innovative solutions and practical implementations</p>
+            </div>
+        </section>
+
+        <section class="project-filter-section">
+            <div class="container">
+                <div class="project-filter">
+                    <button class="active" data-filter="all">All Projects</button>
+                    <button data-filter="electronics">Electronics</button>
+                    <button data-filter="programming">Programming</button>
+                    <button data-filter="zeb">Zero Energy Building</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Audio Amplifier Project -->
+                    <div class="project-item" data-category="electronics" data-animate="zoom-in">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400?text=Audio+Amplifier" alt="Audio Amplifier Project">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>High-Fidelity Audio Amplifier</h3>
+                            <p class="project-description">
+                                Designed and built a 50W Class AB audio amplifier with low distortion and high efficiency. 
+                                Implemented tone control and protection circuits for enhanced performance.
+                            </p>
+                            <div class="project-tech">
+                                <span>Circuit Design</span>
+                                <span>PCB Fabrication</span>
+                                <span>LTspice</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Smart Home LED System -->
+                    <div class="project-item" data-category="electronics programming" data-animate="zoom-in" data-animate-delay="0.2s">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400?text=Smart+Home+LED" alt="Smart Home LED System">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Smart Home LED Lighting System</h3>
+                            <p class="project-description">
+                                Developed an IoT-based LED lighting system controllable via smartphone app with features 
+                                like scheduling, color changing, and energy monitoring.
+                            </p>
+                            <div class="project-tech">
+                                <span>Arduino</span>
+                                <span>ESP8266</span>
+                                <span>Python</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Energy Monitoring System -->
+                    <div class="project-item" data-category="zeb electronics" data-animate="zoom-in" data-animate-delay="0.4s">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400?text=Energy+Monitor" alt="Energy Monitoring System">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Building Energy Monitoring System</h3>
+                            <p class="project-description">
+                                Created a real-time energy consumption monitoring system for buildings with data logging 
+                                and visualization to identify energy saving opportunities.
+                            </p>
+                            <div class="project-tech">
+                                <span>IoT</span>
+                                <span>Python</span>
+                                <span>Energy Audit</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Solar Tracker -->
+                    <div class="project-item" data-category="electronics zeb" data-animate="zoom-in" data-animate-delay="0.6s">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400?text=Solar+Tracker" alt="Dual-Axis Solar Tracker">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Dual-Axis Solar Tracker</h3>
+                            <p class="project-description">
+                                Designed a dual-axis solar tracking system that increases photovoltaic efficiency by 35% 
+                                compared to fixed systems using light sensors and servo motors.
+                            </p>
+                            <div class="project-tech">
+                                <span>Arduino</span>
+                                <span>Renewable Energy</span>
+                                <span>CAD</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Home Automation -->
+                    <div class="project-item" data-category="electronics programming" data-animate="zoom-in" data-animate-delay="0.8s">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400?text=Home+Automation" alt="Home Automation System">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Voice-Controlled Home Automation</h3>
+                            <p class="project-description">
+                                Implemented a voice-controlled home automation system using natural language processing 
+                                to control appliances, lights, and security systems.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Raspberry Pi</span>
+                                <span>NLP</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- ZEB Simulation -->
+                    <div class="project-item" data-category="zeb" data-animate="zoom-in" data-animate-delay="1s">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400?text=ZEB+Simulation" alt="ZEB Simulation">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Zero Energy Building Simulation</h3>
+                            <p class="project-description">
+                                Developed a simulation model for zero energy buildings analyzing energy flows, renewable 
+                                integration, and efficiency measures using MATLAB.
+                            </p>
+                            <div class="project-tech">
+                                <span>MATLAB</span>
+                                <span>Energy Modeling</span>
+                                <span>Simulink</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-testimonials">
+            <div class="container">
+                <h2 class="section-title" data-animate="slide-up">Project Feedback</h2>
+                <div class="testimonials-slider">
+                    <div class="testimonial-card" data-animate="slide-up">
+                        <div class="testimonial-content">
+                            <p>"Aayush's audio amplifier project demonstrated exceptional understanding of analog circuit design. His attention to detail in minimizing noise and distortion was impressive."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://via.placeholder.com/80?text=Prof" alt="Professor">
+                            </div>
+                            <div class="author-info">
+                                <h4>Dr. Sanjay Patil</h4>
+                                <p>Professor, MITAOE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" data-animate="slide-up" data-animate-delay="0.2s">
+                        <div class="testimonial-content">
+                            <p>"The smart home LED system was innovative and well-executed. Aayush showed strong skills in both hardware design and software integration for IoT applications."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://via.placeholder.com/80?text=Mentor" alt="Mentor">
+                            </div>
+                            <div class="author-info">
+                                <h4>Rahul Sharma</h4>
+                                <p>Industry Mentor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>AVN Portfolio</h3>
+                    <p>The portfolio of Aayush Vikram Nawale, ENTC Engineering student at MITAOE, Pune.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> aayush.nawale@example.com</li>
+                        <li><i class="fas fa-phone"></i> +91 XXXXXXXXXX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> MITAOE, Alandi, Pune, Maharashtra</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Aayush Vikram Nawale. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i
